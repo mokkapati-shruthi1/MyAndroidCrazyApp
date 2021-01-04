@@ -65,5 +65,5 @@ steps:
   inputs:
     authType: 'JsonFile'
     serviceAccountKey: '$(Agent.TempDirectory)/api-8006220769294135392-953327-b00b09f1271e.json'
-    apkFile: '**/*.apk'
+    apkFile: 'my-crazy-app.release.apk'
     track: 'internal'
