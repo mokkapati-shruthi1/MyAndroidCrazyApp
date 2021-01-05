@@ -1,4 +1,4 @@
-package com.example.damienaicheh.myandroidcrazyapp;
+package com.demo.damienaicheh.myandroidcrazyapp;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.damienaicheh.myandroidcrazyapp", appContext.getPackageName());
+        assertEquals("com.demo.damienaicheh.myandroidcrazyapp", appContext.getPackageName());
     }
 }

@@ -1,4 +1,4 @@
-package com.example.damienaicheh.myandroidcrazyapp;
+package com.demo.damienaicheh.myandroidcrazyapp;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

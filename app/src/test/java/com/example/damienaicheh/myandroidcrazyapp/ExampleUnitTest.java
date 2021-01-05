@@ -1,4 +1,4 @@
-package com.example.damienaicheh.myandroidcrazyapp;
+package com.demo.damienaicheh.myandroidcrazyapp;
 
 import org.junit.Test;
 
