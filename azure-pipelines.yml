@@ -16,7 +16,7 @@ steps:
     versionSpec: '12'
 
 - script: sudo npm install -g appcenter-cli
-- script: appcenter login --token {YOUR_TOKEN}
+- script: appcenter login --token $(YOUR_TOKEN)
 
 
 - task: Gradle@2
