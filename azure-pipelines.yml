@@ -10,6 +10,12 @@ pool:
   vmImage: 'macOS-10.14'
 
 steps:
+
+
+- script: sudo npm install -g appcenter-cli
+- script: appcenter login --token {YOUR_TOKEN}
+
+
 - task: Gradle@2
   inputs:
     workingDirectory: ''
@@ -55,3 +61,5 @@ steps:
     artifactName: 'apks' 
     publishLocation: 'container'
 
+- script: appcenter test run espresso --app "mokkapati.shruthi1-outlook.com/AndroidDev" --devices "mokkapati.shruthi1-outlook.com/android11" --app-path $(Build.SourcesDirectory)/app/build/outputs/apk/release/my-crazy-app.release.apk
+ --test-series "master" --locale "en_US" --build-dir $(Build.ArtifactStagingDirectory)/app/build/outputs/apk/release/
