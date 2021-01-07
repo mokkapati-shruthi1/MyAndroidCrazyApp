@@ -72,4 +72,5 @@ steps:
       ./gradlew assembleDebugAndroidTest
 
 - script: appcenter test run espresso --app "mokkapati.shruthi1-outlook.com/AndroidDev" --devices "mokkapati.shruthi1-outlook.com/android11" --app-path app/build/outputs/apk/debug/app-debug.apk  --test-series "master" --locale "en_US" --build-dir app/build/outputs/apk/androidTest/debug
-	
+
+
