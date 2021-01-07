@@ -64,4 +64,11 @@ steps:
     artifactName: 'apks' 
     publishLocation: 'container'
 
-- script: appcenter test run espresso --app "mokkapati.shruthi1-outlook.com/AndroidDev" --devices "mokkapati.shruthi1-outlook.com/android11" --app-path /app/build/outputs/apk/ --test-series "master" --locale "en_US" --build-dir $(Build.ArtifactStagingDirectory)/app/build/outputs/apk/release/
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: |
+      ./gradlew assembleDebug
+      ./gradlew assembleDebugAndroidTest
+
+- script: appcenter test run espresso --app "mokkapati.shruthi1-outlook.com/AndroidDev" --devices "mokkapati.shruthi1-outlook.com/android11" --app-path /app/build/outputs/apk/ --test-series "master" --locale "en_US" --build-dir /app/build/outputs/apk/
