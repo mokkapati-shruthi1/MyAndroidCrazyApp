@@ -71,4 +71,4 @@ steps:
       ./gradlew assembleDebug
       ./gradlew assembleDebugAndroidTest
 
-- script: appcenter test run espresso --app "mokkapati.shruthi1-outlook.com/AndroidDev" --devices "mokkapati.shruthi1-outlook.com/android11" --app-path $(Build.ArtifactStagingDirectory)/app/build/outputs/apk/release/  --test-series "master" --locale "en_US" --build-dir $(Build.ArtifactStagingDirectory)/app/build/outputs/apk/release/
+- script: appcenter test run espresso --app "mokkapati.shruthi1-outlook.com/AndroidDev" --devices "mokkapati.shruthi1-outlook.com/android11" --app-path $(Build.ArtifactStagingDirectory)/app/build/outputs/apk/release/  --test-series "master" --locale "en_US" --build-dir $(Build.ArtifactStagingDirectory)/app/build/outputs/apk/androidTest/debug
